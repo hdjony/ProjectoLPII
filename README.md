@@ -24,3 +24,5 @@ com:
 O trabalho deve ser realizado (individualmente/em grupo máximo de duas pessoas).
 O trabalho é defendido individualmente!
 O trabalho deverá ser entregue em três fases:
+
+### checking some tips from github blog 

@@ -1,0 +1,9 @@
+﻿<Application x:Class="TrabalhoPratico1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TrabalhoPratico1"
+             StartupUri="Views\index.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

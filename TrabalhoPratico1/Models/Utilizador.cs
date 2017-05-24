@@ -17,6 +17,7 @@ namespace TrabalhoPratico1.Models
         public Utilizador(string Nome, string PalavraPasse) {
             this.Nome = Nome;
             this.PalavraPasse = PalavraPasse;
+            
         }
 
     }

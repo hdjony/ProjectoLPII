@@ -12,7 +12,7 @@ namespace TrabalhoPratico1.Repository
         public DataModel dataModel { get; set; } = new DataModel();
         static DataModelRepository instance;
 
-        string path = @"C:\Users\Public\TestFolder\WriteLines.json"; //caminho para ficheiro
+        string path = @"WriteLines.json"; //caminho para ficheiro
 
         public static DataModelRepository getInstance()
         { //obter instancia da classe
@@ -71,5 +71,6 @@ namespace TrabalhoPratico1.Repository
             return true;
 
         }
+        
     }
 }

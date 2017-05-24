@@ -10,6 +10,7 @@ namespace TrabalhoPratico1.Models
     {
         public List<Projecto> ProjectList { get; set; } = new List<Projecto>();
         public List<Utilizador> UserList { get; set; } = new List<Utilizador>();
+        public List<Tarefa> ListaTarefa { get; set; } = new List<Tarefa>();
 
         public DataModel()
         {

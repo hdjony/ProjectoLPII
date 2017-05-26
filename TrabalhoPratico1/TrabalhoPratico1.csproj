@@ -79,9 +79,11 @@
     <Compile Include="Repository\ProjectRepository.cs" />
     <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="Repository\TarefaRepository.cs" />
+    <Compile Include="Repository\UtilizadorRepository.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ProjectoViewModel.cs" />
     <Compile Include="ViewModel\TarefaViewModel.cs" />
+    <Compile Include="ViewModel\UtilizadorViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="Views\.xaml.cs">
       <DependentUpon>Boards.xaml</DependentUpon>
@@ -99,7 +101,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\CriarConta.xaml">
+    <Page Include="Views\UtilizadorPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -115,8 +117,8 @@
     <Compile Include="Controllers\ProjectoController.cs" />
     <Compile Include="Controllers\TarefaController.cs" />
     <Compile Include="Controllers\UtilizadorController.cs" />
-    <Compile Include="Views\CriarConta.xaml.cs">
-      <DependentUpon>CriarConta.xaml</DependentUpon>
+    <Compile Include="Views\UtilizadorPage.xaml.cs">
+      <DependentUpon>UtilizadorPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\index.xaml.cs">
       <DependentUpon>index.xaml</DependentUpon>

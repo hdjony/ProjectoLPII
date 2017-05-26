@@ -33,7 +33,7 @@ namespace TrabalhoPratico1
 
         private void ButtonCancelar_Click(object sender, RoutedEventArgs e)
         {
-            CriarConta criarConta = new CriarConta(10);
+            UtilizadorPage criarConta = new UtilizadorPage();
             NavigationService.Navigate(criarConta);
             
         }

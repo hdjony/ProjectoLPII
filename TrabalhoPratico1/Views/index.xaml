@@ -21,13 +21,13 @@
         <Label Name="password" Grid.Column="0" Grid.Row="1" Content="Password"/>
         <TextBox Name="txtUtilizador" Grid.Column="1" Grid.Row="0" IsEnabled="True" Background="AliceBlue" HorizontalAlignment="Stretch" Text="KB Vida com outra prespetiva" FontSize="16" FontWeight="Bold"/>
         <TextBox Name="txtPassword" Grid.Column="1" Grid.Row="1" IsEnabled="True"/>
-        <StackPanel Grid.ColumnSpan="2" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Name="ButtonIniciar" Click="ButtonIniciar_Click_1" Grid.Column="0" Grid.Row="2"
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Width="300" Margin="0,0,0,5">
+            <Button x:Name="ButtonIniciar" Click="ButtonIniciar_Click_1"
                 Content="Login" Margin="10" IsEnabled="True" />
-            <Button Name="ButtonCancelar" Click="ButtonCancelar_Click" Grid.Column="1" Grid.Row="2"
-                Content="Criar Conta" Margin="10" MaxWidth="65" IsEnabled="True"/>
-            <Button Name="ButtonExit" Click="ButtonExit_Click" Grid.Column="1" Grid.Row="2"
-                Content="Exit" Margin="10" Width="40" IsEnabled="True"/>
+            <Button x:Name="ButtonCancelar" Click="ButtonCancelar_Click"
+                Content="Adicionar Utilizador" Margin="10" MaxWidth="200" IsEnabled="True" RenderTransformOrigin="-0.935,0.5"/>
+            <Button x:Name="ButtonExit" Click="ButtonExit_Click"
+                Content="Exit" Margin="10" IsEnabled="True"/>
             <DataGrid Width="100" Margin="0,51,0,-4" RenderTransformOrigin="0.5,0.5">
                 <DataGrid.RenderTransform>
                     <TransformGroup>
@@ -41,6 +41,6 @@
 
         </StackPanel>
         <Image HorizontalAlignment="Left" Height="198" Margin="50,51,-50,-198" Grid.Row="1" VerticalAlignment="Top" Width="300" RenderTransformOrigin="0.671,0.497"/>
-       
+
     </Grid>
 </Page>

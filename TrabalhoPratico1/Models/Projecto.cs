@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace TrabalhoPratico1.Models
 {
-    class Projecto
+    public class Projecto
     {
         /*Declaração Variaveis*/
-
+        public string Nome { get; set; }
         public string Descricao { get; set; }//breve descrição sobre o projeto
         public string Tipo { get; set; }//que tipo de projecto
         public string Estado { get; set; }

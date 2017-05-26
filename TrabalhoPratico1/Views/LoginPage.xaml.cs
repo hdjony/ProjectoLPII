@@ -32,20 +32,35 @@ namespace TrabalhoPratico1.Views
 
         private void Button_Click_Criar_utilizador(object sender, RoutedEventArgs e)
         {
-            foreach (Utilizador utilizador in DataModelRepository.getInstance().dataModel.UserList)
+            Boards newBoard = null;
+            if (TextBoxUser.Text == string.Empty)
+            {
+                MessageBox.Show("Please enter a value to Nome!");
+            }
+            else if (TextBoxPassword.Text == string.Empty)
+            {
+                MessageBox.Show("Please check Palavra-passe!");
+            }
+
+            foreach (Utilizador utilizador in UserRepository.getInstance().dataModel.UserList)
             {
                 if (utilizador.Nome == TextBoxUser.Text && utilizador.PalavraPasse == TextBoxPassword.Text)
                 {
-                    Boards newBoard = new Boards();
-                    NavigationService.Navigate(newBoard);
+                    newBoard = new Boards();
+                    
                 }
                 
             }
+            if (newBoard!=null)
+            {
+                NavigationService.Navigate(newBoard);
+            }
+           
         }
 
         private void Button_Click_Anular(object sender, RoutedEventArgs e)
         {
-
+            Application.Current.Shutdown();
         }
     }
 

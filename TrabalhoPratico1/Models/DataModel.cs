@@ -26,5 +26,10 @@ namespace TrabalhoPratico1.Models
         {
             ProjectList.Add(projeto);
         }
+        public void AddTarefa(Tarefa tarefa)
+        {
+            ListaTarefa.Add(tarefa);
+        }
+        
     }
 }

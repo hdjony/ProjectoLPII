@@ -7,17 +7,25 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Boards">
-
+    <Page.Resources>
+        <local:Boards x:Key="MyTarefas"/>
+    </Page.Resources>
     <Grid>
-        <Label x:Name="LabelToDo" Content="ToDo" Margin="6"/>
-        <Label x:Name="LabelDoing" Content="Doing" HorizontalAlignment="Center" />
-        <Label x:Name="LabelDone" Content="Done" HorizontalAlignment="Right"/>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            
-        </Grid.RowDefinitions>
+        <ListView Margin="11,13,355,11" Name="lvDataBinding">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="Nome Tarefa: " />
+                        <TextBlock Text="{Binding Nome}" FontWeight="Bold" />
+                        <TextBlock Text=", " />
+                        <TextBlock Text="Descricao Tarefa: " />
+                        <TextBlock Text="{Binding Descricao}" FontWeight="Bold" />
+                        <TextBlock Text=" (" />
+                        <TextBlock Text="{Binding Tempo}"  Foreground="Blue" Cursor="None" />
+                        <TextBlock Text=")" />
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoPratico1.Models
 {
-    class Utilizador
+     public class Utilizador
     {
         public string Nome { get; set; }
         public string PalavraPasse { get; set; }

@@ -44,9 +44,9 @@ namespace TrabalhoPratico1.Views
             else
             {
 
-                DataModelRepository.getInstance().dataModel.AddUtilizador(u);
+                UserRepository.getInstance().dataModel.AddUtilizador(u);
 
-                if (DataModelRepository.getInstance().WriteDataModel())
+                if (UserRepository.getInstance().WriteDataModel())
                 {
                     MessageBox.Show("Dados Guardados com sucesso.");
 

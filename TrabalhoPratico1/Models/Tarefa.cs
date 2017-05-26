@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace TrabalhoPratico1.Models
 {
-    class Tarefa
+    public class Tarefa
     {   
         /*declaracao variaveis*/
+        public string Nome { get; set; }
         public string Descricao { get; set; }
         public string Tempo { get; set; }
         public TipoTarefa tipoTarefa { get; set; }
         public List<Tarefa> subTarefa { get; set; }
+
         /*indicação em que board esta */
     }
 }

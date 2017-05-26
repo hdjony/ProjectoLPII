@@ -6,25 +6,25 @@ using System;
 
 namespace TrabalhoPratico1.Repository
 {
-    class DataModelRepository
+    class UserRepository
     {
 
         public DataModel dataModel { get; set; } = new DataModel();
-        static DataModelRepository instance;
+        static UserRepository instance;
 
         string path = @"WriteLines.json"; //caminho para ficheiro
 
-        public static DataModelRepository getInstance()
+        public static UserRepository getInstance()
         { //obter instancia da classe
 
             if (instance == null) //verifica se class já está inicializada
             {
-                instance = new DataModelRepository();    //se nao estiver inicializa
+                instance = new UserRepository();    //se nao estiver inicializa
             }
             return instance;  //retorna a sua instancia
         }
 
-        private DataModelRepository()
+        private UserRepository()
         {
             if (!File.Exists(path))
             {
@@ -35,7 +35,7 @@ namespace TrabalhoPratico1.Repository
             ReadDataModel();
         }
 
-        public void ReadDataModel()
+        public DataModel ReadDataModel()
         {
             string data = string.Empty;
 
@@ -54,6 +54,7 @@ namespace TrabalhoPratico1.Repository
             {
                 dataModel = new DataModel();
             }
+            return dataModel;
         }
 
         public bool WriteDataModel()

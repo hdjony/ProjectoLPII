@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrabalhoPratico1.Models
+namespace TrabalhoPratico1
 {
-   public  class TipoTarefa
+    public class TestObject
     {
-        public string nome { get; set; }
+        public string TestString { get; set; }
     }
 }
-    

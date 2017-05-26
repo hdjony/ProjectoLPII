@@ -14,7 +14,7 @@ namespace TrabalhoPratico1
     {
         public index()
         {
-            DataModelRepository.getInstance();
+            UserRepository.getInstance();
             InitializeComponent();
         }
         

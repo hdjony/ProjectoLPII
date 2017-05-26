@@ -43,7 +43,7 @@ namespace TrabalhoPratico1.Repository
         public List<Tarefa> LerListaTarefas ()
         {
 
-            return TarefaList = UserRepository.getInstance().dataModel.ListaTarefa; //FileManager.LoadTarefaList();
+            return TarefaList = UserRepository.getInstance().dataModel.ListaTarefa; 
         }
     }
 }

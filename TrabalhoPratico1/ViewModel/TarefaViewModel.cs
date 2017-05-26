@@ -38,7 +38,6 @@ namespace TrabalhoPratico1.ViewModel
             {
                 MessageBox.Show("Ooopsss, algo inesperado aconteceu!");
             }
-            //FileManager.SaveTarefaList();
         }
 
         public void DeleteTarefa(string Name)
@@ -50,7 +49,6 @@ namespace TrabalhoPratico1.ViewModel
                 TarefaRepository.Instance.TarefaList.Remove(tarefaRemover);
                 UserRepository.getInstance().dataModel.ListaTarefa.Remove(tarefaRemover);
                 UserRepository.getInstance().WriteDataModel();
-                //FileManager.SaveTarefaList();
             }
         }
     }

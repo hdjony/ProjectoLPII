@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TrabalhoPratico1.Helpers;
+﻿using System.Collections.Generic;
 using TrabalhoPratico1.Models;
-using TrabalhoPratico1.Repository;
 
 namespace TrabalhoPratico1.Repository
 {

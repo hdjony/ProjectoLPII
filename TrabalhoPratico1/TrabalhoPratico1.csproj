@@ -75,12 +75,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Helpers\FileManager.cs" />
     <Compile Include="Models\DataModel.cs" />
     <Compile Include="Repository\ProjectRepository.cs" />
     <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="Repository\TarefaRepository.cs" />
-    <Compile Include="TestObject.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ProjectoViewModel.cs" />
     <Compile Include="ViewModel\TarefaViewModel.cs" />

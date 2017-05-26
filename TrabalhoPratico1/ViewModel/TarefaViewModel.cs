@@ -1,12 +1,7 @@
 ﻿using GalaSoft.MvvmLight;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using TrabalhoPratico1.Helpers;
 using TrabalhoPratico1.Models;
 using TrabalhoPratico1.Repository;
 
@@ -43,7 +38,7 @@ namespace TrabalhoPratico1.ViewModel
             {
                 MessageBox.Show("Ooopsss, algo inesperado aconteceu!");
             }
-            FileManager.SaveTarefaList();
+            //FileManager.SaveTarefaList();
         }
 
         public void DeleteTarefa(string Name)
@@ -55,7 +50,7 @@ namespace TrabalhoPratico1.ViewModel
                 TarefaRepository.Instance.TarefaList.Remove(tarefaRemover);
                 UserRepository.getInstance().dataModel.ListaTarefa.Remove(tarefaRemover);
                 UserRepository.getInstance().WriteDataModel();
-                FileManager.SaveTarefaList();
+                //FileManager.SaveTarefaList();
             }
         }
     }
